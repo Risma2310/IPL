@@ -1,0 +1,45 @@
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.confirmation-card {
+    background: linear-gradient(145deg, #f8f9fa, #e2e6ea);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.confirmation-card h3 {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.confirmation-card .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.confirmation-card p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.alert {
+    background-color: #28a745;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #23272b;
+}

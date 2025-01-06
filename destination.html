@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travela - Kelompok 6</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="destination.html" class="dropdown-item active">Destination</a>
+                            <a href="logout.php" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="booking.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">Bali Destination</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Destination</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Destination Start -->
+    <div class="container-fluid destination py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px- 3">Destination</h5>
+                <h1 class="mb-0">Popular Destination</h1>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/uluwatuuu.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                                <h4 class="text-white mb-2 mt-3">ULUWATU</h4>
+                                                <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-Uluwatu">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/Uluwatuu.jpeg" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/Ulundanu2.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                                <h4 class="text-white mb-2 mt-3">ULUNDANU</h4>
+                                                <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-Ulundanu">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/Ulundanu3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/TanahLotTemple.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                                <h4 class="text-white mb-2 mt-3">TANAH LOT</h4>
+                                                <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-TanahLot">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/Tanahlot2.jpg" data-lightbox="destination-7"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="img/Tirtagangga2.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                                <h4 class="text-white mb-2 mt-3">TIRTA GANGGA</h4>
+                                                <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-TirtaGangga">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="img/Tirtagangga.jpg" data-lightbox="destination-8"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="destination-img h-100">
+ 
+                                    <img class="img-fluid rounded w-100 h-100" src="img/PuraTirtaEmpulBali.jpg" style="object-fit: cover; min-height: 300px;" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                        <h4 class="text-white mb-2 mt-3">PURA TIRTA EMPUL</h4>
+                                        <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-PuraTirtaEmpul">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/Puratirta2.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/GoaGajahBali.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                        <h4 class="text-white mb-2 mt-3">GOA GAJAH</h4>
+                                        <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-GoaGajah">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/goagajah.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/monkey-forest.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                        <h4 class="text-white mb-2 mt-3">MONKEY FOREST</h4>
+                                        <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-MonkeyForest">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/MonkeyForestUbud.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/balisafari.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">Destinasi</a>
+                                        <h4 class="text-white mb-2 mt-3">BALI SAFARI</h4>
+                                        <a href="#" class="btn-hover text-white" data-bs-toggle="modal" data-bs-target="#modal-BaliSafari">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="img/balisafari2.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Destination End -->
+
+        <!-- Modals for each destination -->
+        <div class="modal fade" id="modal-Uluwatu" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Uluwatu</h5>
+                        <button type="button ```html
+                        " class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Uluwatu...</p>
+                        <img src="img/uluwatuuu.jpg" class="img-fluid" alt="Uluwatu">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-Ulundanu" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Ulundanu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Ulundanu...</p>
+                        <img src="img/Ulundanu2.jpg" class="img-fluid" alt="Ulundanu">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-TanahLot" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Tanah Lot</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Tanah Lot...</p>
+                        <img src="img/TanahLotTemple.jpg" class="img-fluid" alt="Tanah Lot">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-TirtaGangga" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Tirta Gangga</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Tirta Gangga...</p>
+                        <img src="img/Tirtagangga2.jpg" class="img-fluid" alt="Tirta Gangga">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-PuraTirtaEmpul" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Pura Tirta Empul</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Pura Tirta Empul...</p>
+                        <img src="img/PuraTirtaEmpulBali.jpg" class="img-fluid" alt="Pura Tirta Empul">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-GoaGajah" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Goa Gajah</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Goa Gajah...</p>
+                        <img src="img/GoaGajahBali.jpg" class="img-fluid" alt="Goa Gajah">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-MonkeyForest" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header <h5 class="modal-title" id="modalLabel">Monkey Forest</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Monkey Forest...</p>
+                        <img src="img/monkey-forest.jpg" class="img-fluid" alt="Monkey Forest">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-BaliSafari" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Bali Safari</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Details about Bali Safari...</p>
+                        <img src="img/balisafari.jpg" class="img-fluid" alt="Bali Safari">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Kontak Kami,</h4>
+                        <a href=""><i class="fas fa-home me-2"></i> Jl. Raya Ubud No. 123, Ubud, Bali, Indonesia</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> info@travelaBali.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> 0821937823638</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-white me-2"></i>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <div class="row gy-3 gx-2 mb-4">
+                            <div class="col-xl-6">
+                                <form>
+                                    <div class="form-floating">
+                                        <select class="form-select bg-dark border" id="select1">
+                                            <option value="1">Indonesia</option>
+                                        </select>
+                                        <label for="select1">Indonesia</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-6">
+                                <form>
+                                    <div class="form-floating">
+                                        <select class="form-select bg-dark border" id="select1">
+                                            <option value="1">IDR</option>
+                                            <option value="2">USD</option>
+                                        </select>
+                                        <label for="select1">$</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <h4 class="text-white mb-3">Payments</h4>
+                        <div class="footer-bank-card">
+                            <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa- cc-mastercard fa-2x"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-body py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Travela</a>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    Designed By Kelompok 6
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+        // Fungsi untuk mengganti gambar latar belakang
+        function changeBackgroundImage(newImageUrl) {
+            const bgBreadcrumb = document.querySelector('.bg-breadcrumb');
+            bgBreadcrumb.style.backgroundImage = `linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(${newImageUrl})`;
+        }
+    
+        // Contoh penggunaan
+        changeBackgroundImage('img/bg-ulundanu.jpg'); // Ganti dengan URL gambar baru
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
